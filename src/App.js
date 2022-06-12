@@ -16,7 +16,7 @@ function App() {
 
     if (searchistory) {
       Axios.get(
-        `http://www.omdbapi.com/?apikey=${process.env.REACT_APP_OMDB_KEY}&s=${searchistory}`
+        `https://www.omdbapi.com/?apikey=${process.env.REACT_APP_OMDB_KEY}&s=${searchistory}`
       )
         .then(function (response) {
           setMovies(response.data.Search);
@@ -39,7 +39,7 @@ function App() {
     localStorage.setItem("searchinput", e.target.searchinput.value);
 
     Axios.get(
-      `http://www.omdbapi.com/?apikey=${process.env.REACT_APP_OMDB_KEY}&s=${e.target.searchinput.value}`
+      `https://www.omdbapi.com/?apikey=${process.env.REACT_APP_OMDB_KEY}&s=${e.target.searchinput.value}`
     )
       .then(function (response) {
         setMovies(response.data.Search);
