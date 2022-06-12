@@ -1,13 +1,30 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url(https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700);
+
+:root {
+  --black: #191a19;
+  --white: #fafafa;
+  --grey: #bbbbbb;
+  --primary: #1f4690;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-weight: 400;
+  font-family: Dosis, sans-serif;
+  font-size: 1.6rem;
+  background-color: var(--black);
+  max-width: 140rem;
+  padding: 0 5rem;
+  margin: 0 auto;
 }
